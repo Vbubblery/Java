@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/linearLayout_me">
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:id="@+id/profile"
+        ></LinearLayout>
+     <Button
+         android:id="@+id/Login"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/log" />
+     <Button
+         android:id="@+id/Reg"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/Reg" />
+   <FrameLayout  
+            android:id="@android:id/tabcontent"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="1.0" />  
+  
+        <TabWidget  
+            android:id="@android:id/tabs"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_weight="0.0"  
+            android:visibility="gone" />  
+  
+            <RadioGroup  
+                android:id="@+id/main_tab_group"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_gravity="bottom"  
+                android:gravity="bottom"  
+                android:orientation="horizontal"  
+                 >  
+  
+                <RadioButton  
+                    android:id="@+id/main_index"  
+                    android:button="@null"
+                    android:layout_weight="1.0"
+					android:layout_width="fill_parent" 
+                    android:text="@string/Index" />  
+  
+                <RadioButton  
+                    android:id="@+id/main_category"  
+                    android:button="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"   
+                    android:text="@string/Category" />  
+  
+                <RadioButton  
+                    android:id="@+id/main_newproject"  
+                    android:button="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"  
+                    android:text="@string/NewProject" />  
+  
+                <RadioButton  
+                    android:id="@+id/main_me"  
+                    android:button="@null"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.0"  
+                    android:checked="true"     
+                    android:text="@string/Me" />  
+            </RadioGroup>  
+
+</LinearLayout>
